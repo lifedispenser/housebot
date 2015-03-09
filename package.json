@@ -5,7 +5,7 @@
   "author": "Spencer Ying <lifedispenser@gmail.com>",
   "description": "A simple helpful robot for your Company",
   "dependencies": {
-    "contextify": "^0.1.13",
+    "cheerio": "^0.18.0",
     "hubot": "^2.11.2",
     "hubot-diagnostics": "0.0.1",
     "hubot-google-images": "^0.1.4",
@@ -19,8 +19,7 @@
     "hubot-scripts": "^2.5.16",
     "hubot-shipit": "^0.1.2",
     "hubot-slack": "^3.3.0",
-    "hubot-youtube": "^0.1.2",
-    "jsdom": "^4.0.2"
+    "hubot-youtube": "^0.1.2"
   },
   "engines": {
     "node": "0.10.x"
