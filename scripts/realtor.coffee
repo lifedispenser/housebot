@@ -1,11 +1,12 @@
 jsdom = require 'jsdom'
+jquery = ''
 
 module.exports = (robot) ->
 
   robot.hear /(realtor.com.+)/i, (msg) ->
     robot.http("http://www." + msg.match[1])
       .get() (err, res, body) ->
-        jsdom.env body, ["http://code.jquery.com/jquery.js"], (errors, window) ->
+        jsdom.env body, [jquery], (errors, window) ->
           data = {
             url: window.location.href
             address: window.$('[itemprop=streetAddress]').eq(0).text()
