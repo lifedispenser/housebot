@@ -5,6 +5,7 @@
   "author": "Spencer Ying <lifedispenser@gmail.com>",
   "description": "A simple helpful robot for your Company",
   "dependencies": {
+    "contextify": "^0.1.13",
     "hubot": "^2.11.2",
     "hubot-diagnostics": "0.0.1",
     "hubot-google-images": "^0.1.4",
